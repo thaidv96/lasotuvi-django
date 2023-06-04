@@ -1,8 +1,10 @@
-from django.conf.urls import url
+# from django.conf.urls import url
+from django.urls import path, include, re_path
+
 
 from lasotuvi_django.views import api, lasotuvi_django_index
 
 urlpatterns = [
-    url(r'^api', api),
-    url(r'^$', lasotuvi_django_index)
+    re_path(r'^api', api),
+    re_path(r'^$', lasotuvi_django_index)
 ]

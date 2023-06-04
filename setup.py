@@ -14,10 +14,5 @@ setup(name='lasotuvi_django',
       tests_require=['pytest'],
       include_package_data=True,
       install_requires=[
-          "Django >= 2.1.2",
-          "lasotuvi >= 0.1.2",
-          "pytz==2018.5",
-          "six==1.11.0",
-          "typed-ast==1.1.0",
       ],
       zip_safe=False)
